@@ -1,6 +1,6 @@
 #ifndef STEST_H
 #define STEST_H
-/* A quick and dirty c89 single header c test runner
+/* A quick and dirty single header c test runner
  * Copyright 2020 © Jesse Rudolph <jesse.rudolph@gmail.com>
  * License: MIT
 */

@@ -1,8 +1,8 @@
 # stest.h
-A quick and dirty single header c89 test runner
+A quick and dirty single header c test runner
 
 The secret sauce that makes this trivial to implement is the 
-`__atribute__((constructor))` bit in the `TEST` macro. This makes it unnecessary
+`__atribute__((constructor))`, bit in the `TEST` macro. This makes it unnecessary
 to manually construct a list of test functions; each test function gets a tiny 
 constructor that adds itself to a table in the test runner at startup.
 

@@ -36,8 +36,8 @@ static void TEST_NAME(name)() {
 #define expect(cond)                                              \
     if ( !(cond) ) {                                              \
         fprintf( stderr,                                          \
-                "%s:%d: test '%s' failed. expected `" #cond "`\n" \
-        ,__FILE__,__LINE__,THIS_TEST_NAME);                       \
+                "%s:%d: test '%s' failed. expected `%s`\n"        \
+        ,__FILE__,__LINE__,THIS_TEST_NAME, #cond);                \
         stest_failed++;                                           \
         return;                                                   \
 	}
